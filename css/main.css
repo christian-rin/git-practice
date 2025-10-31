@@ -35,6 +35,11 @@ footer {
   color: #555;
 }
 
+code {
+  font-size: 1.1em;
+  font-family: monospace;
+}
+
 .navbar {
   background-color: #007bff;       /* Blue background */
   padding: 1rem 0;
@@ -93,4 +98,22 @@ footer {
 
 .navbar a:hover::after {
   width: 80%;
+}
+
+.color-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5%;
+  cursor: pointer;
+  transition: transform 0.2s ease, border 0.2s ease;
+}
+
+.color-btn:hover {
+  transform: scale(1.2);
+}
+
+.color-btn.selected {
+  border: 1px solid #646464;
+  transform: scale(1.2);
 }

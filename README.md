@@ -6,7 +6,7 @@ This project includes multiple pages and components to simulate real web develop
 ---
 
 ## 🚀 Live Demo
-🌐 **GitHub Pages:** [https://christian-rin.github.io/my-git-practice-website/](https://christian-rin.github.io/my-git-practice-website/)
+🌐 **GitHub Pages:** [https://christian-rin.github.io/git-practice/](https://christian-rin.github.io/git-practice/)
 
 ---
 

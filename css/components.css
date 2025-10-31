@@ -1,54 +1,72 @@
+/* Components Page Styles */
 
-/* Components Page */
-main h1 {
-  margin-top: 2rem;
+main {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .component {
-  margin: 2rem 0;
-  text-align: center;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background: #f8f9fa;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
 }
 
 .widget {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  display: inline-block;
-  padding: 1.5rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #e9ecef;
+  border-radius: 8px;
+  text-align: center;
 }
 
 /* Digital clock */
 #clock {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #007bff;
+  font-size: 2.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 2px;
+  color: #333;
 }
 
 /* Timer */
 #timerDisplay {
   font-size: 2rem;
   margin-bottom: 1rem;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 /* Calculator */
 .calculator {
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #calcDisplay {
-  width: 180px;
-  margin-bottom: 10px;
-  padding: 5px;
-  font-size: 1.2rem;
+  width: 90%;
+  margin-bottom: 0.7rem;
+  font-size: 1.3rem;
+  padding: 0.4rem;
+  border-radius: 5px;
+  border: 1px solid #bbb;
   text-align: right;
+  background: #f4f4f4;
 }
 
 .calc-buttons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
+  grid-template-columns: repeat(4, 48px);
+  gap: 0.5rem;
 }
 
 .calc-buttons .btn {
@@ -68,7 +86,6 @@ main h1 {
 /* ===== Weather Widget ===== */
 #weatherDisplay {
   margin-top: 1rem;
-  font-size: 1.2rem;
 }
 
 #cityInput {
@@ -90,4 +107,62 @@ main h1 {
 
 #getWeatherBtn:hover {
   background-color: #0056b3;
+}
+
+/* ===== Navigation Bar ===== */
+nav.navbar {
+  background: #007bff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+nav.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+nav.navbar li {
+  display: inline;
+}
+
+nav.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.08rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav.navbar a:hover,
+nav.navbar a.active {
+  background: #0056b3;
+  color: #fff;
+}
+
+/* Responsive nav */
+@media (max-width: 600px) {
+  nav.navbar ul {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  nav.navbar {
+    padding: 0.7rem 0.5rem;
+  }
+  main {
+    padding: 0.5rem;
+  }
+  .component {
+    padding: 0.7rem;
+  }
+  .calc-buttons {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

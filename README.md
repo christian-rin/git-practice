@@ -1,0 +1,13 @@
+# 🧠 My Git Practice Website
+
+A simple website created to practice Git, HTML, CSS, and JavaScript fundamentals.  
+This project includes multiple pages and components to simulate real web development workflows.
+
+---
+
+## 🚀 Live Demo
+🌐 **GitHub Pages:** [https://christian-rin.github.io/my-git-practice-website/](https://christian-rin.github.io/my-git-practice-website/)
+
+---
+
+## 📂 Folder Structure

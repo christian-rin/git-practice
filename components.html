@@ -6,6 +6,7 @@
   <title>Components | Git Practice Website</title>
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/calendar.css" />
 </head>
 <body>
   <div id="header-placeholder"></div>
@@ -73,10 +74,36 @@
         </div>
       </div>
     </section>
+
+    <section>
+      <div class="calendar">
+        <div class="calendar-header">
+          <button id="prev">&#8592;</button>
+          <h2 id="monthYear"></h2>
+          <button id="next">&#8594;</button>
+        </div>
+        <table id="calendarBody">
+          <thead>
+            <tr>
+              <th>Su</th>
+              <th>Mo</th>
+              <th>Tu</th>
+              <th>We</th>
+              <th>Th</th>
+              <th>Fr</th>
+              <th>Sa</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
   </main>
 
   <div id="footer-placeholder"></div>
 
+  <script src="js/calendar.js"></script>
   <script src="js/components.js"></script>
   <script src="js/main.js"></script>
 </body>
